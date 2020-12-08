@@ -17,8 +17,15 @@ Amongst the most significant variables that were used in the final model were:
 
 *Lasso:* This was a very useful technique that helped me identify a significant number of variables which would ultimately be the most important in my model:
         
-        - Zipcode: By using the lasso model to run with just the zipcode variable, I identified which zip codes were most significant importance to price. I then tested performance of all non-0 coefficient zip codes provided by the lasso model to identify which coefficients had the highest performance. I identified that  the variables above a 20 coefficient were most significant, therefore took all zipcodes with a higher coefficient than 20 and made them into a separate logical variable (as a numeric data type).  
-        - Cleaning_fee: When running a lasso model on several testing iterations, it identified cleaning_fee as a very important variable in the model. This variable was a very significant one with the only complication being that there were NA’s within the variables. I made these 0 as many apartments did not have an associated cleaning fee (generally, for NA’s, I tried to input the median or mean value of the variable). 
+        - Zipcode: By using the lasso model to run with just the zipcode variable, I identified which zip codes were 
+        most significant importance to price. I then tested performance of all non-0 coefficient zip codes provided by
+        the lasso model to identify which coefficients had the highest performance. I identified that  the variables 
+        above a 20 coefficient were most significant, therefore took all zipcodes with a higher coefficient than 20 and
+        made them into a separate logical variable (as a numeric data type).  
+        - Cleaning_fee: When running a lasso model on several testing iterations, it identified cleaning_fee as a very 
+        important variable in the model. This variable was a very significant one with the only complication being that
+        there were NA’s within the variables. I made these 0 as many apartments did not have an associated cleaning fee
+        (generally, for NA’s, I tried to input the median or mean value of the variable). 
 
 - Different models used for predicting final model: 
 
