@@ -1,4 +1,4 @@
-# AirBNB Price Prediction
+# AirBNB Price Prediction #
 
 ## Project Goal ## 
 
@@ -15,7 +15,7 @@ Amongst the most significant variables that were used in the final model were:
 
 - Ways of identifying correlation: 
 
-*Lasso:* This was a very useful technique that helped me identify a significant number of variables which would ultimately be the most important in my model:
+*Lasso:* A way of using shrinkage within a dataset to identify the most significant impacts per type of input. This was a very useful technique that helped me identify a significant number of variables which would ultimately be the most important in my model:
         
         - Zipcode: By using the lasso model to run with just the zipcode variable, I identified which zip codes were 
         most significant importance to price. I then tested performance of all non-0 coefficient zip codes provided by
@@ -28,7 +28,7 @@ Amongst the most significant variables that were used in the final model were:
         there were NA’s within the variables. I made these 0 as many apartments did not have an associated cleaning fee
         (generally, for NA’s, I tried to input the median or mean value of the variable). 
 
-- Different models used for predicting final model: 
+- Different approaches used for the final predictive model: 
 
 *Random forest:* Through the majority of the project, I found the best results with random forest model. The formula was extremely flexible with various data types and consistently provided amongst the best performance results. In order to get a better visual understanding of a tree structure, I would use my highest performing variables, create a model and plot decision trees using rpart. I would often times take the information gained through lasso feature selection or through corrplots and incorporate them within random forest. Random forest models with the same variables performed approximately a half an RMSE point better than models generally considered to be more powerful such as boosting. One limitation which I came across first using Random Forest was the computational limitation of my workstation. I would generally test the performance of a new set of variables with 100 trees, and then run to get optimal results with 1000 trees, as anything above that level would not be able to be computed by the resources provided in the Lenovo Yoga i5 2 core laptop that I utilized.
 
