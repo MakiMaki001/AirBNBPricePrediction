@@ -37,5 +37,9 @@ When I tried XGBoost, the train and test data results were all promising, with t
 
 ## Results ## 
 
+* Random Forest *
+
+* Boosting/ XGBoost *
+
 ## Notes and Recommendations ##
 
